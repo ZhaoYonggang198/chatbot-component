@@ -1,6 +1,6 @@
-@import '/static/style/weui.wxss';
-@import '/static/style/main.wxss';
-@import '/static/font/iconfont.wxss';
+@import '../../../static/style/weui.wxss';
+@import '../../../static/style/main.wxss';
+@import '../../../static/font/iconfont.wxss';
 
 .wrapper {
   display: flex;

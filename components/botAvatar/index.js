@@ -6,7 +6,7 @@ Component({
   properties: {
     url: {
       type: String,
-      value: '/static/image/avatar.png',
+      value: '../../static/image/avatar.png',
       observer: function (newVal) {
         if (newVal && newVal !== '') {
           this.setData({
@@ -25,7 +25,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    displayUrl: '/static/image/avatar.png'
+    displayUrl: '../../static/image/avatar.png'
   },
 
   /**

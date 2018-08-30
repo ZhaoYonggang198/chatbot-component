@@ -5,7 +5,7 @@
         <block wx:for="{{messageList}}" wx:for-item="messages" wx:key="index">
           <view id="{{index}}">
             <message-item lastBotMsg="{{index==(messageList.length-1)&&messages.to!==undefined}}"
-                      messages="{{messages}}"
+                      messages="{{messages}}" userAuthed="true"
                       bindrenderComplete="renderComplete"
                       bindrenderUpdate="renderUpdate"
                       binditemLoad="scollToBottom"
@@ -15,7 +15,7 @@
           <view id="{{'bottom' + index}}"></view>
         </block>
         <block wx:if="{{localMsgSending}}">
-          <user-say-sending/>
+          <user-say-sending userAuthed="true"/>
         </block>
         <view id="bottom"></view>
       </view>

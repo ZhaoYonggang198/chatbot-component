@@ -10,7 +10,7 @@ Component({
     },
     userAuthed: {
       type: Boolean,
-      value: false
+      value: true
     }
   },
 

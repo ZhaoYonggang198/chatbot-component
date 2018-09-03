@@ -56,6 +56,8 @@ Component({
         msg.type === 'getUserinfo' ||
         msg.type === 'dialog-end' ||
         msg.type === 'image' ||
+    	  msg.type === 'audio' ||
+      msg.type === 'video' ||
         msg.type === 'divider' ||
         msg.type === 'button-list'||
         msg.type === 'article'

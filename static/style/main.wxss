@@ -163,11 +163,3 @@
   padding: 20rpx 0rpx;
   font-size: 28rpx;
 }
-
-.user-msg-box-color {
-  background-color: #a3ecf1;
-}
-
-.user-msg-box-color:active {
-  background-color: #008289;
-}

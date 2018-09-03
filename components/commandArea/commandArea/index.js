@@ -107,7 +107,8 @@ Component({
         this.data.displayText = state.items.filter(item => item.caption && item.caption.length > 0)
         .map((item) => item.caption).join(',')
         this.setData({
-          currentMessage: this.data.displayText
+          currentMessage: this.data.displayText,
+          items: state.items
         })
       }
     })

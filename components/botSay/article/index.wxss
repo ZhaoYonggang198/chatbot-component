@@ -1,0 +1,18 @@
+.article-wrapper {
+  background-color: white;
+  font-size: 30rpx;
+}
+
+.article-wrapper .title{
+  padding-left:15rpx;
+  padding-top:15rpx;
+}
+
+
+.article-wrapper .desc {
+  font-size: 0.9em;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  padding-bottom: 15rpx;
+  color: #666;
+}

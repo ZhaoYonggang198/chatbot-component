@@ -18,6 +18,7 @@ function getActiveMessage(activeMsg, array) {
 }
 
 Component({
+  externalClasses: ['da-class'],
   /**
    * 组件的属性列表
    */
@@ -80,6 +81,9 @@ Component({
         store.message.dispatch(appendLocalMessage(item.value ? item.value : item.caption))
       }
       store.message.dispatch(sendGenericRequest('event', {name: item.event, ...item.data}))
+    },
+    handleArticleClick (event) {
+      this.triggerEvent('articleClick', event.detail)
     }
   },
 

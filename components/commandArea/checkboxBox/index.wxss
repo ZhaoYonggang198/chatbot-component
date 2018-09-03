@@ -15,6 +15,7 @@
 .image{
   width:100%;
   height: 100%;
+  background-color: #f2f2f2;
 }
 .haveimage{
   width:300rpx;
@@ -23,9 +24,11 @@
   border: 1rpx solid #dadada;
   margin-left: 20rpx;
   position: relative;
+  border: 1px solid #dadada;
 }
 .haveimage .imageBox{
   display: block;
+  background-color: #f2f2f2;
 }
 .haveimage .value {
   width:100%;
@@ -34,7 +37,8 @@
 .no-image{
   width: auto;
   border-radius: 10rpx;
-  padding:6rpx;
+  /*border: 1px solid #dadada;*/
+  padding:5rpx;
   margin-left: 30rpx;
 }
 .no-image .image-box{
@@ -44,16 +48,39 @@
   width: 100%;
   white-space: nowrap;
   padding:6rpx 20rpx;
+  color: #19a1a8;
+  border-radius:35rpx;
+  padding:10rpx 10rpx;
+  text-align:center;
+  box-shadow:0 0 0;
+  font-weight:500;
+}
+.no-image .checked-color {
+  color: #FFFFFF;
+  background-color: #19a1a8;
+  border: none;
+}
+
+.no-image .un-checked-color {
+  color: #19a1a8;
+  background:#f2f2f2;
+  border:3rpx solid #19a1a8;
+}
+.no-image .checked {
+  top: 0;
+  right: 10rpx;
 }
 .select-box{
   display: none;
 }
-.checkMe{
-   border: 2rpx solid #1cb2b9;
+.no-image .checkMe{
+   /*border: 1rpx solid @p-dark-color;*/
+  background-color: #19a1a8;
+  color: #FFFFFF;
 }
 
-.checkMe.no-image {
-  padding: 4rpx;
+.haveimage .checkMe{
+  border: 1rpx solid #2b313d;
 }
 
 .checkMe:after{
@@ -85,12 +112,29 @@
   top: 10rpx;
   right: 10rpx;
 }
+
+.haveimage .checked-color {
+  color: #FFFFFF;
+  background-color: #19a1a8;
+  /*border: none;*/
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+
+.haveimage .un-checked-color {
+  color: #19a1a8;
+  background:#fff;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  /*border:3rpx solid @select-btn-color;*/
+}
 .background-fff{
   background: #fff;
 }
 .image-value{
   text-align:center;
   font-size:28rpx;
+  font-weight:500;
   line-height: 50rpx;
   height: 100rpx;
   overflow:hidden;
@@ -98,4 +142,13 @@
   display:-webkit-box;
   -webkit-box-orient:vertical;
   -webkit-line-clamp:2;
+}
+
+.checked-icon {
+  width:20px;
+  height:20px;
+  background:rgba(0,0,0,.2);
+  border-radius:50%;
+  text-align:center;
+  line-height:20px;
 }

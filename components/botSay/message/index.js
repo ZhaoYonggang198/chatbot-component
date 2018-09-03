@@ -29,6 +29,9 @@ Component({
     },
     buttonListEvent (event) {
       this.triggerEvent('buttonListEvent', event.detail)
+    },
+    handleArticleClick (event) {
+      this.triggerEvent('articleClick', event.detail)
     }
   }
 })

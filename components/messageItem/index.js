@@ -43,6 +43,9 @@ Component({
     },
     buttonListEvent (event) {
       this.triggerEvent('buttonListEvent', event.detail)
+    },
+    handleArticleClick (event) {
+      this.triggerEvent('articleClick', event.detail)
     }
   },
 
@@ -50,11 +53,12 @@ Component({
     let messages = this.properties.messages
     let displayIncomingMsgs = this.data.outgoing || !messages || !messages.msgs ? [] : messages.msgs.filter((msg) => {
       return msg.type === 'text' ||
-      msg.type === 'getUserinfo' ||
-      msg.type === 'dialog-end' ||
-      msg.type === 'image' ||
-      msg.type === 'divider' ||
-      msg.type === 'button-list'
+        msg.type === 'getUserinfo' ||
+        msg.type === 'dialog-end' ||
+        msg.type === 'image' ||
+        msg.type === 'divider' ||
+        msg.type === 'button-list'||
+        msg.type === 'article'
     })
     this.setData({
       outgoing: messages.from !== undefined,

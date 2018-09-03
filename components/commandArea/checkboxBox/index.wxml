@@ -8,18 +8,15 @@
             bindtouchend="touchEnd">
         <view class="weui-flex">
           <view class="weui-flex__item">
-            <block wx:if="{{option.imageUrl}}">
-              <view class="image-box imageBox {{!option.caption.length?'image-box-1':''}}">
-                <image class="image" mode="aspectFill" src="{{option.imageUrl}}"></image>
+            <block wx:if="{{haveImage}}">
+              <view class="image-box imageBox">
+                <image class="image" mode="aspectFit" src="{{option.imageUrl}}"  wx:if="{{option.imageUrl}}"></image>
               </view>
-              <view class="value image-value" wx:if="{{option.caption}}">{{option.caption}}</view>
+              <view class="value image-value {{checkArr[index]?'checked-color':'un-checked-color'}}">{{option.caption}}</view>
             </block>
             <block wx:else>
-              <view class="value valueBox">{{option.caption}}</view>
+              <view class="value valueBox {{checkArr[index]?'checked-color':'un-checked-color'}}">{{option.caption}}</view>
             </block>
-          </view>
-          <view class="weui-flex__item checked" wx:if="{{checkArr[index]}}">
-            <icon class="weui-icon-radio" type="success_no_circle" size="16" ></icon>
           </view>
         </view>
       </label>

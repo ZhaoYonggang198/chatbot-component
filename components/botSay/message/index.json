@@ -3,6 +3,9 @@
   "usingComponents": {
     "bot-say-text": "../text/index",
     "bot-say-button-list": "../buttonList/index",
-    "bot-say-image": "../image/index"
+    "bot-say-image": "../image/index",
+    "bot-say-article": "../article/index",
+    "bot-say-audio": "../audio/index",
+    "bot-say-video": "../video/index"
   }
 }

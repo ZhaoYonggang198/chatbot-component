@@ -1,0 +1,9 @@
+<!--plugin/components/botSay/artical/index.wxml-->
+<view class="article-wrapper" bindtap="clickhandle">
+  <image mode="widthFix" src="{{message['cover-url']}}"/>
+  <view class="title">商品推荐</view>
+  <view class="desc">
+    <text>{{message.description}}</text>
+  </view>
+</view>
+

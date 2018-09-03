@@ -17,8 +17,11 @@
                 wx:if="{{i==0 || (displayIncomingMsgs[i-1].type =='divider' && (i-1) < received )}}"/>
             </view>
             <view class="content">
-              <bot-say-message msg="{{msg}}" bindloadDone="loadDone" wx:if="{{!lastBotMsg || i < received}}"
-                 bindbuttonListEvent="buttonListEvent" bindpreviewImage="previewImage"/>
+              <bot-say-message msg="{{msg}}" wx:if="{{!lastBotMsg || i < received}}" 
+                bindloadDone="loadDone" 
+                bindbuttonListEvent="buttonListEvent"
+                bindpreviewImage="previewImage"
+                bindarticleClick="handleArticleClick"/>
               <view wx:if="{{lastBotMsg && i == received}}">
                 <bot-say-receiving/>
               </view>
